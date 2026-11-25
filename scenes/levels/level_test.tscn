@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxloop2icydcb"]
+[gd_scene load_steps=8 format=3 uid="uid://cxloop2icydcb"]
 
 [ext_resource type="Script" path="res://scripts/levels/level_test.gd" id="1_level"]
 [ext_resource type="PackedScene" uid="uid://clspjarsf26dh" path="res://scenes/player/test_player.tscn" id="2_player"]
+[ext_resource type="PackedScene" uid="uid://by2kajeagg255" path="res://scenes/enemies/rat_enemy.tscn" id="3_rat"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape_ground"]
 size = Vector2(3200, 80)
@@ -72,3 +73,6 @@ shape = SubResource("RectangleShape_wall")
 
 [node name="TestPlayer" parent="." instance=ExtResource("2_player")]
 position = Vector2(576, 560)
+
+[node name="RatEnemy" parent="." instance=ExtResource("3_rat")]
+position = Vector2(900, 628)
